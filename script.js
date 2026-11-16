@@ -58,8 +58,7 @@ function moveLift(floor) {
 
 // Contoh kode untuk masing-masing editor.
 const examples = {
-  battery: `// SOAL 1: BATERAI HP
-let baterai = 15;
+  battery: `let baterai = 15;
 
 if (baterai < 20) {
   setBattery(baterai);
@@ -68,8 +67,7 @@ if (baterai < 20) {
   setBattery(baterai);
   console.log("Baterai masih cukup.");
 }`,
-  lift: `// SOAL 2: LIFT 3 LANTAI
-let tombol = 2;
+  lift: `let tombol = 2;
 
 if (tombol === 1) {
   moveLift(1);
