@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -16,19 +17,29 @@
   <main class="container">
     <section class="lesson">
       <div class="section-heading">
-        <div><p class="eyebrow">SOAL 1</p><h2>🔋 Baterai HP</h2></div>
+        <div>
+          <p class="eyebrow">SOAL 1</p>
+          <h2>🔋 Baterai HP</h2>
+        </div>
         <span class="tag">If / Else</span>
       </div>
+
       <p class="description">Jika baterai kurang dari 20%, HP perlu diisi daya. Jika baterai 20% atau lebih, baterai masih cukup.</p>
 
       <div class="workspace">
         <div class="visual-panel">
-          <div class="panel-heading"><span>ANIMASI SIMULASI</span><span class="live-dot">● LIVE</span></div>
+          <div class="panel-heading">
+            <span>ANIMASI SIMULASI</span>
+            <span class="live-dot">● LIVE</span>
+          </div>
+
           <div class="battery-stage">
             <div class="phone">
               <div class="phone-speaker"></div>
               <div class="battery-screen">
-                <div class="battery-icon"><div id="batteryFill"></div></div>
+                <div class="battery-icon">
+                  <div id="batteryFill"></div>
+                </div>
                 <strong id="batteryNumber">75%</strong>
                 <span>DAYA BATERAI</span>
                 <div class="charging-mark" id="chargingMark">⚡</div>
@@ -36,25 +47,42 @@
             </div>
             <div class="battery-caption" id="batteryCaption">Baterai masih cukup</div>
           </div>
-          <div class="result" id="batteryResult" aria-live="polite">🔋 Baterai masih cukup. Belum perlu segera diisi daya.</div>
+
+          <div class="result" id="batteryResult" aria-live="polite">
+            🔋 Baterai masih cukup. Belum perlu segera diisi daya.
+          </div>
+
           <div class="manual-control">
             <label for="batterySlider">Coba geser baterai: <b id="batteryValue">75%</b></label>
             <input id="batterySlider" type="range" min="0" max="100" value="75">
-            <div class="range-labels"><span>0%</span><span>100%</span></div>
+            <div class="range-labels">
+              <span>0%</span>
+              <span>100%</span>
+            </div>
           </div>
         </div>
 
         <div class="code-lab">
           <div class="editor-top">
-            <div><span class="editor-icon">💻</span><label for="batteryCode">Editor JavaScript</label></div>
+            <div>
+              <span class="editor-icon">💻</span>
+              <label for="batteryCode">Editor JavaScript</label>
+            </div>
             <button class="reset-btn" data-reset="battery">Reset kode</button>
           </div>
+
           <p class="editor-hint">Ubah nilai <code>baterai</code> atau kondisi <code>if-else</code>, lalu jalankan kode.</p>
+
           <textarea id="batteryCode" class="code-editor" spellcheck="false" aria-label="Kode JavaScript baterai"></textarea>
+
           <div class="editor-actions">
-            <button class="run-btn" data-run="battery"><span class="run-label">▶ Jalankan Kode</span><span class="spinner" aria-hidden="true"></span></button>
+            <button class="run-btn" data-run="battery">
+              <span class="run-label">▶ Jalankan Kode</span>
+              <span class="spinner" aria-hidden="true"></span>
+            </button>
             <span class="keyboard-tip">Hasil animasi muncul di sebelah kiri.</span>
           </div>
+
           <pre class="output" id="batteryOutput" aria-live="polite">Hasil kode akan muncul di sini.</pre>
         </div>
       </div>
@@ -62,23 +90,46 @@
 
     <section class="lesson">
       <div class="section-heading">
-        <div><p class="eyebrow">SOAL 2</p><h2>🛗 Lift 3 Lantai</h2></div>
+        <div>
+          <p class="eyebrow">SOAL 2</p>
+          <h2>🛗 Lift 3 Lantai</h2>
+        </div>
         <span class="tag">If / Else If / Else</span>
       </div>
+
       <p class="description">Lift hanya dapat menuju lantai 1, 2, atau 3. Jika memasukkan angka di luar pilihan tersebut, lift tidak akan bergerak.</p>
 
       <div class="workspace">
         <div class="visual-panel">
-          <div class="panel-heading"><span>ANIMASI SIMULASI</span><span class="live-dot">● LIVE</span></div>
+          <div class="panel-heading">
+            <span>ANIMASI SIMULASI</span>
+            <span class="live-dot">● LIVE</span>
+          </div>
+
           <div class="lift-stage">
             <div class="lift-building">
-              <div class="floor-row floor-3"><span>LANTAI 3</span><div class="floor-marker" id="marker3"></div></div>
-              <div class="floor-row floor-2"><span>LANTAI 2</span><div class="floor-marker" id="marker2"></div></div>
-              <div class="floor-row floor-1"><span>LANTAI 1</span><div class="floor-marker active" id="marker1"></div></div>
-              <div class="lift-car" id="liftCar"><span>🛗</span></div>
+              <div class="floor-row floor-3">
+                <span>LANTAI 3</span>
+                <div class="floor-marker" id="marker3"></div>
+              </div>
+              <div class="floor-row floor-2">
+                <span>LANTAI 2</span>
+                <div class="floor-marker" id="marker2"></div>
+              </div>
+              <div class="floor-row floor-1">
+                <span>LANTAI 1</span>
+                <div class="floor-marker active" id="marker1"></div>
+              </div>
+              <div class="lift-car" id="liftCar">
+                <span>🛗</span>
+              </div>
             </div>
           </div>
-          <div class="result" id="liftResult" aria-live="polite">🛗 Lift sedang berada di lantai 1.</div>
+
+          <div class="result" id="liftResult" aria-live="polite">
+            🛗 Lift sedang berada di lantai 1.
+          </div>
+
           <div class="manual-control">
             <p class="manual-label">Coba tekan tombol lift:</p>
             <div class="floor-buttons">
@@ -91,15 +142,25 @@
 
         <div class="code-lab">
           <div class="editor-top">
-            <div><span class="editor-icon">💻</span><label for="liftCode">Editor JavaScript</label></div>
+            <div>
+              <span class="editor-icon">💻</span>
+              <label for="liftCode">Editor JavaScript</label>
+            </div>
             <button class="reset-btn" data-reset="lift">Reset kode</button>
           </div>
+
           <p class="editor-hint">Ubah nilai <code>tombol</code> menjadi 1, 2, atau 3. Angka selain itu akan menampilkan peringatan.</p>
+
           <textarea id="liftCode" class="code-editor" spellcheck="false" aria-label="Kode JavaScript lift"></textarea>
+
           <div class="editor-actions">
-            <button class="run-btn" data-run="lift"><span class="run-label">▶ Jalankan Kode</span><span class="spinner" aria-hidden="true"></span></button>
+            <button class="run-btn" data-run="lift">
+              <span class="run-label">▶ Jalankan Kode</span>
+              <span class="spinner" aria-hidden="true"></span>
+            </button>
             <span class="keyboard-tip">Hasil animasi muncul di sebelah kiri.</span>
           </div>
+
           <pre class="output" id="liftOutput" aria-live="polite">Hasil kode akan muncul di sini.</pre>
         </div>
       </div>
@@ -108,11 +169,27 @@
     <section class="challenge">
       <p class="eyebrow">INGAT KEMBALI</p>
       <h2>Apa itu If-Else?</h2>
-      <div class="definition-grid">
-        <div><b>IF (JIKA)</b><p>Jika kondisi terpenuhi, jalankan kode.</p></div>
-        <div><b>ELSE IF (JIKA)</b><p>Jika kondisi sebelumnya tidak terpenuhi, jalankan kode.</p></div>
-        <div><b>ELSE (JIKA TIDAK)</b><p>Jika kondisi sebelumnya tidak terpenuhi, jalankan kode terakhir.</p></div>
+
+      <!-- Penjelasan disusun vertikal dari IF hingga ELSE -->
+      <div class="definition-grid" style="grid-template-columns: 1fr;">
+
+        <div>
+          <b>IF (JIKA)</b>
+          <p>Jika kondisi terpenuhi, jalankan kode.</p>
+        </div>
+
+        <div>
+          <b>ELSE IF (JIKA)</b>
+          <p>Jika kondisi sebelumnya tidak terpenuhi, jalankan kode.</p>
+        </div>
+
+        <div>
+          <b>ELSE (JIKA TIDAK)</b>
+          <p>Jika kondisi sebelumnya tidak terpenuhi, jalankan kode terakhir.</p>
+        </div>
+
       </div>
+
       <p class="closing">Hebat! Kamu sudah belajar membuat komputer mengambil keputusan melalui kode JavaScript.</p>
     </section>
   </main>
