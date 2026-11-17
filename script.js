@@ -25,13 +25,13 @@ function setBattery(level) {
     chargingMark.classList.add("visible");
     caption.textContent = "Baterai lemah!";
     document.getElementById("batteryResult").textContent =
-      "🪫 Baterai di bawah 20%. Segera isi daya HP!";
+      "🪫 Baterai lemah. Ayo isi daya!";
   } else {
     fill.style.background = "#2fc477";
     chargingMark.classList.remove("visible");
     caption.textContent = "Baterai masih cukup";
     document.getElementById("batteryResult").textContent =
-      "🔋 Baterai 20% atau lebih. Belum perlu segera diisi daya.";
+      "🔋 Baterai masih cukup.";
   }
 }
 
@@ -60,10 +60,8 @@ function moveLift(floor) {
 
   document.getElementById(`marker${floor}`).classList.add("active");
 
-  result.textContent = `🛗 Lift sedang bergerak menuju lantai ${floor}...`;
-
   window.setTimeout(() => {
-    result.textContent = `✅ Lift tiba di lantai ${floor}!`;
+    result.textContent = `✅ Menuju lantai ${floor}!`;
   }, 2300);
 }
 
